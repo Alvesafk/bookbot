@@ -1,4 +1,11 @@
 from stats import get_num_words, count_char, sort_char_dict, sort_on
+import sys
+
+if len(sys.argv) < 2:
+    print("Usage: python3 main.py <path_to_book>")
+    sys.exit(1)
+
+filepath = sys.argv[1]
 
 def get_book_text(filepath):
     with open(filepath) as f:
@@ -6,7 +13,7 @@ def get_book_text(filepath):
     return file_contents
 
 def main():
-    filepath = "books/frankenstein.txt"   
+       
     text = get_book_text(filepath)
     total_words = get_num_words(text)
     word_dict = count_char(text)
