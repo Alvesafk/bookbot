@@ -8,7 +8,7 @@ A small project built with the intention of learning!
 ## How to Use?
 
 ### 1. Clone the repo:
-`git clone https://github.com/Alvesafk/bookbot`
+`git clone https://github.com/Alvesafk/bookbot` <br>
 `cd bookbot`
 ### 2. Run the script!
 `pyhton3 main.py <Path to .txt>`
