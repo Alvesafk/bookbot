@@ -20,10 +20,9 @@ def sort_on(items):
     return items["num"]
 
 def sort_char_dict(char_dict):
-    dict = count_char(char_dict)
     sorted_list = []
-    for char in dict:
-        num = dict[char]
+    for char in char_dict:
+        num = char_dict[char]
         a = {"char": char, "num": num}
         sorted_list.append(a)
     sorted_list.sort(reverse=True, key=sort_on)
